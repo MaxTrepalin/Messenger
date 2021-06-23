@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Messenger
+namespace Client
 {
     public partial class App : Application
     {
@@ -10,7 +10,7 @@ namespace Messenger
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Client.MainPage();
             MainPage = new NavigationPage(new MainPage());
            
 

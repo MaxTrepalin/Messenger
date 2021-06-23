@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Messenger.iOS
+namespace Client.iOS
 {
     public class Application
     {

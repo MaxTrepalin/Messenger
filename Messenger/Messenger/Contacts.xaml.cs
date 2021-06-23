@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Messenger
+namespace Client
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Contacts : ContentPage
@@ -27,7 +27,7 @@ namespace Messenger
        
         private async void chats_button_Clicked(object sender, EventArgs e)
         {
-            var secondPage = new ListViewPage1();
+            var secondPage = new ChatPage();
 
             await Navigation.PushAsync(secondPage);
         }

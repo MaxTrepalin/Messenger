@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace Messenger.UWP
+namespace Client.UWP
 {
     public sealed partial class MainPage
     {
@@ -21,7 +21,7 @@ namespace Messenger.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new Messenger.App());
+            LoadApplication(new Client.App());
         }
     }
 }

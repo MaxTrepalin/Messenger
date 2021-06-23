@@ -128,9 +128,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Messenger\Messenger.csproj">
-      <Project>{7E77FDF2-2634-4E99-9EF5-1A610D9D9243}</Project>
-      <Name>Messenger</Name>
+    <ProjectReference Include="..\Messenger\Client.csproj">
+      <Project>{EEFD9AA1-4C89-4677-801D-16C5103375FD}</Project>
+      <Name>Client</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Messenger
+namespace Client
 {
    public class Chat
     {

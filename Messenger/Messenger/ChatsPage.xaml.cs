@@ -8,37 +8,28 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Messenger
+namespace Client
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ListViewPage1 : ContentPage
+    public partial class ChatPage : ContentPage
     {
         public List<Chat> Chat1 { get; set; }
 
         public ObservableCollection<string> Items { get; set; }
 
-        public ListViewPage1()
+        public ChatPage()
         {
+
             InitializeComponent();
 
             Chat1 = new List<Chat>
             {
-                new Chat {name = "Max", message = "hi" },
+                new Chat {name = "Max", message = "" },
           };
-            ChatsPageList.ItemsSource = Chat1;
+           
         }
 
-        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            if (e.Item == null)
-                return;
-
-            await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
-
-            //Deselect Item
-            ((ListView)sender).SelectedItem = null;
-
-        }
+     
 
         private async void status_button_Clicked(object sender, EventArgs e)
         {
@@ -49,10 +40,16 @@ namespace Messenger
 
         private void Send_button_Clicked(object sender, EventArgs e)
         {
+            //    Chat_StackLayout.Children.Add(new Frame { CornerRadius = 30 });
+                  
 
-            Label chat1 = new Label();
-            chat1.SetBinding(Label.TextProperty, "Сообщение: " + Entry_chat.Text);
-           // ChatsPageList.ItemsSource = Entry_chat(ToString);
+            Chat_StackLayout.Children.Add(new Label { Text = Entry_chat.Text, BackgroundColor = Color.LightGreen} );
+            
+
+          //  StackLayout stackLayout = new StackLayout() { Children = { Chat_boxviev } };
+         //   Content = Chat_StackLayout;
+            
+                     
         }
 
         private  async void settings_button_Clicked(object sender, EventArgs e)

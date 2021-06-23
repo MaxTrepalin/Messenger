@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Messenger
+namespace Client
 {
     public partial class MainPage : ContentPage
     {
@@ -19,14 +19,14 @@ namespace Messenger
 
         private async void chats_button_Clicked(object sender, EventArgs e)
         {
-            var secondPage = new ListViewPage1();
+            var secondPage = new ChatPage();
 
             await Navigation.PushAsync(secondPage);
         }
 
         private async void ListView_Focused(object sender, FocusEventArgs e)
         {
-            var secondPage = new ListViewPage1();
+            var secondPage = new ChatPage();
 
             await Navigation.PushAsync(secondPage);
         }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Messenger.Registration">
+             x:Class="Client.Registration">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Настройки"
@@ -17,8 +17,8 @@
         <Entry x:Name="entry_password" IsPassword="True"></Entry>
         <Label x:Name="label_password2" Text="Введите еще раз пароль" ></Label>
         <Entry x:Name="entry_password2" IsPassword="True"></Entry>
-    
-        <Button x:Name="button_registration" Text="Зарегистрироваться" HeightRequest="30"></Button>
+
+        <Button x:Name="button_registration" Text="Зарегистрироваться" HeightRequest="30" Clicked="button_registration_Clicked"></Button>
         <Button x:Name="button_registrationCancel" Text="Отменить регистрацию" HeightRequest="30" Clicked="button_registrationCancel_Clicked"></Button>
 
 
